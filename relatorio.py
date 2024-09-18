@@ -12,20 +12,20 @@ st.title("Relatório Geral J&J Brasil")
 with st.container():
     st.sidebar.title("Grupo Operacional")
 
-    grupo = ['Global Service', 'Innovative Medicine', 'MedTech', 'Surgical Vision', 'Vision Care']
+    grupo = ['Global Service', 'Innovative Medicine', 'MedTech', 'Surgical Vision', 'Lucas']
     grupo_selecionado = st.sidebar.selectbox('Selecione o Grupo', grupo)
     st.header(f"{grupo_selecionado}")
 
     #ano = ['2023', '2024']
     #ano_selecionado = st.sidebar.multiselect('Selecione o ano', ano)
 
-    logo = (r'C:\Users\Lucas Esteves Pereir\Documents\streamlit\Imagem1 vamover.png')
+    logo = (r'C:\Users\Lucas Esteves Pereir\Documents\Relatorio JnJ - Streamlit\Relatorio_JnJ\Imagem1 vamover.png')
     
     st.logo(logo)
 
 
 #Gráficos
-eventos = pd.read_excel(r'C:\Users\Lucas Esteves Pereir\Documents\streamlit\template real.xlsx')
+eventos = pd.read_excel(r'C:\Users\Lucas Esteves Pereir\Documents\Relatorio JnJ - Streamlit\Relatorio_JnJ\template real.xlsx')
 
 eventos['data_nova'] = pd.to_datetime(eventos['Data'], errors='coerce')
 
