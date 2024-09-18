@@ -12,7 +12,7 @@ st.title("Relatório Geral J&J Brasil")
 with st.container():
     st.sidebar.title("Grupo Operacional")
 
-    grupo = ['Global Service', 'Innovative Medicine', 'MedTech', 'Surgical Vision', 'Vision Care']
+    grupo = ['Global Service', 'Innovative Medicine', 'MedTech', 'Surgical Vision', 'Lucas']
     grupo_selecionado = st.sidebar.selectbox('Selecione o Grupo', grupo)
     st.header(f"{grupo_selecionado}")
 
