@@ -42,6 +42,7 @@ eventos_por_mes = eventos_filtrados.groupby (['Mês', 'Tipo']).size().unstack(fi
 
 eventos_por_mes.index = eventos_por_mes.index.to_timestamp()
 eventos_por_mes = eventos_por_mes.sort_index()
+st.write(f'Acidentes e multas por mês - {ano_selecionado}')
 
 
 st.line_chart(eventos_por_mes)
